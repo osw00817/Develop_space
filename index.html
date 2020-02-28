@@ -31,6 +31,44 @@
             #discord_img{
             height:300px; margin:auto;}
         }
+         #test {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
     </style>
 </head>
 <body style="background-color:#1D40B4">
@@ -42,7 +80,7 @@
         </div>
     </nav>
     <!--style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);"-->
-    <div class="flex flex-col h-64 m-auto" style="background-image: url('https://cdn.discordapp.com/attachments/540841944658477056/682192323894968400/389d2ebfac6ba39b.png');">
+    <div class="flex flex-col h-64 m-auto" id="test" style="background-image: url('https://cdn.discordapp.com/attachments/540841944658477056/682192323894968400/389d2ebfac6ba39b.png');">
         <div class="my-auto flex flex-col text-white ml-16" >
             <h1 class="text-6xl mb-8" style="font-family: 'Noto Sans KR';">DEVELOP WITH PEOPLE</h1>
             <div class="mt-8 text-xl" style="font-family: 'Nanum Gothic';">
